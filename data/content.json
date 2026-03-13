@@ -1,0 +1,102 @@
+{
+  "hero": {
+    "title": "TechGuru",
+    "year": "2026",
+    "tagline": "Designing the Future Today. Join the ultimate tech revolution.",
+    "eventDate": "March 30, 2026 09:00:00",
+    "images": {
+      "main": "https://lh3.googleusercontent.com/aida-public/AB6AXuB7UQ4l0jdS0iG0o4RXEaEv-4sxlkEAQMVTKA2M-SzdP1LcbEoqIdFkhVtUkMagBLdQhrSvhC1JDE6GI57NQn8v-P1E_hCwkobUQ82uCoPmCoDX2ol2OXH9EDfP_hEMynf5QMmYyg2JtllyYtUVm7XFpJiQmZ-4J3SoE46yn3nqz_oB3S64ZtGK5dycS0bn86vEopZERNGxg-DQquyg0QdtRAuz-3kPfQ51PLkDh3qUPNXORxQliceDzP9KHF37XmgLCKSmcTSlEIA",
+      "side": "https://lh3.googleusercontent.com/aida-public/AB6AXuDg7QjGIX50z_2hOt9D4hW8toywGSKmDXqGdiIkAoKcmc6OqFjzGOclCvY1cXpjAfzQn5-t13PAnT25OE923hbOHPjNJ-BqZcBQIuPU0YoUu8SQATgjw5wEHOth7so7b0_CcXQXOr55LnrnIT1NN2OwJ0ZR_rQxwFXyiavmSDM2IdyjVuGlTge5FHzVU6VI464WpJnqvqZWdCFpASIBl0eJrQIt0J7W-0DGu_8aPmt7FoIXmhXOJTK9mTilt8HpjOYTyzhV083dSOM"
+    }
+  },
+  "about": {
+    "title": "About TechGuru",
+    "description": "At TechGuru 2026, we believe that innovation is more than just code; it's about creating solutions that redefine the human experience. Join us at GGSCE Nashik for a journey into the next era of technology.",
+    "partners": ["TECH CORP", "NEXUS", "CYBER_SYS", "ARCH_AI"],
+    "stats": [
+      { "label": "Exciting Events", "value": "25+" },
+      { "label": "Prize Pool", "value": "₹2,00,000+" },
+      { "label": "Participants", "value": "1500+" },
+      { "label": "Industry Partners", "value": "10+" }
+    ]
+  },
+  "tracks": [
+    {
+      "id": "01",
+      "title": "Technical Competitions",
+      "description": "Hackathons and intense coding challenges to push your limits.",
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBatZT7f20nr1ddT6cv5NRZE05eohxlvvwGnalcvMNtVr9V7S3pp2EIqou2jk-0VX18ctTQzvBISoIUKp-jahTznGR4n42Sp2EgsQ1ydmn8Rur6H0LzdCHsWYSp334u1FVTIXkwdK5OtWnhCSdVDzD3yjDtZBLoXryKztZKbYuyNBaJgqphl1kTaklVRgs5tXZ-0lmRUd-PEfx8r2szA9AjmOzuckGF6-UwDWxb-hKjcKAU4XqnxZR3klIqM5ft2WAgqrpDoj-TRDs"
+    },
+    {
+      "id": "02",
+      "title": "Robotics",
+      "description": "High-speed bot races and strategic battle arenas.",
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDg7QjGIX50z_2hOt9D4hW8toywGSKmDXqGdiIkAoKcmc6OqFjzGOclCvY1cXpjAfzQn5-t13PAnT25OE923hbOHPjNJ-BqZcBQIuPU0YoUu8SQATgjw5wEHOth7so7b0_CcXQXOr55LnrnIT1NN2OwJ0ZR_rQxwFXyiavmSDM2IdyjVuGlTge5FHzVU6VI464WpJnqvqZWdCFpASIBl0eJrQIt0J7W-0DGu_8aPmt7FoIXmhXOJTK9mTilt8HpjOYTyzhV083dSOM"
+    },
+    {
+      "id": "03",
+      "title": "Innovation Expo",
+      "description": "Showcasing prototypes and groundbreaking project exhibitions.",
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuAYy64dhgaV_JDbZiBAa1bMwA_NuzsTubbdn88Sazpw7hZ804Uf9w_XGrKRmzTL-m98XmjmUwFSqfmxqqOe72qP0SZ-uwt82a2fe7Vup61t2FfmoWkFziBTZlIYuJ9qd3pR2LZ3wPn3RsZG14T7iOnWWC9Q6PKC1Nrn7XANt4b-phx1OTWG4V0L-K9q3Z_r1tognozPBrp1Nj3Is3a0A-3TD7pDi69RFe7oVKI41920U245wg5LaA8K5BJPqqudxOF3IJzQ9ROB734"
+    },
+    {
+      "id": "04",
+      "title": "Management & Gaming",
+      "description": "Business logic drills and premier e-sports tournaments.",
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCKWEIcyCDYGe97AKQjvuYYnbbdlSePGoWYG99shsz_iu4U21mcyst4GXP-mbPO_7n_WwitMf4pv4lIEaKGU6JrNGYxBteCA8ayl9zBED207HGbR32y66EKtKXobMOLjiRY0pIzgZJcDPtHTchvE2C09r0fQ80PaAcHGJDmRSazpii3Eu_iZ8OdtBfGx-W2rx2o34y7C4npxO6SpNfgFO8Jql6J1_cziqx0OkaAPn91GS2iHfbgZpuAZrSvzMkk4l6kpdSjT7vJJA0"
+    }
+  ],
+  "pastEvents": {
+    "title": "Reliving the Legacy",
+    "description": "Swipe through the milestones of our previous tech revolutions.",
+    "events": [
+      {
+        "year": "2023",
+        "title": "The Genesis",
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDg7QjGIX50z_2hOt9D4hW8toywGSKmDXqGdiIkAoKcmc6OqFjzGOclCvY1cXpjAfzQn5-t13PAnT25OE923hbOHPjNJ-BqZcBQIuPU0YoUu8SQATgjw5wEHOth7so7b0_CcXQXOr55LnrnIT1NN2OwJ0ZR_rQxwFXyiavmSDM2IdyjVuGlTge5FHzVU6VI464WpJnqvqZWdCFpASIBl0eJrQIt0J7W-0DGu_8aPmt7FoIXmhXOJTK9mTilt8HpjOYTyzhV083dSOM"
+      },
+      {
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuAYy64dhgaV_JDbZiBAa1bMwA_NuzsTubbdn88Sazpw7hZ804Uf9w_XGrKRmzTL-m98XmjmUwFSqfmxqqOe72qP0SZ-uwt82a2fe7Vup61t2FfmoWkFziBTZlIYuJ9qd3pR2LZ3wPn3RsZG14T7iOnWWC9Q6PKC1Nrn7XANt4b-phx1OTWG4V0L-K9q3Z_r1tognozPBrp1Nj3Is3a0A-3TD7pDi69RFe7oVKI41920U245wg5LaA8K5BJPqqudxOF3IJzQ9ROB734"
+      },
+      {
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCKWEIcyCDYGe97AKQjvuYYnbbdlSePGoWYG99shsz_iu4U21mcyst4GXP-mbPO_7n_WwitMf4pv4lIEaKGU6JrNGYxBteCA8ayl9zBED207HGbR32y66EKtKXobMOLjiRY0pIzgZJcDPtHTchvE2C09r0fQ80PaAcHGJDmRSazpii3Eu_iZ8OdtBfGx-W2rx2o34y7C4npxO6SpNfgFO8Jql6J1_cziqx0OkaAPn91GS2iHfbgZpuAZrSvzMkk4l6kpdSjT7vJJA0"
+      },
+      {
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBiBxZ_bZ7h067N9NsyWRyTpOCx0kvwUiBvEbeVlSzzpfkLEIY7LpvVtSaqDA3kWzb2sWNjlyEL2UVfdeDKI0jKf8Jr8rvIi0gN6vtGdUeabLrm1GHit-Kmj1ZL-R7pUAnXbhyHCAeV7hYbnAIKQgAxUP9kpAzBkFALJBk0biQjeKcuao1UAW9gWqH8l9HUEXUeN7RybZFyQQ-A1hSuxlgTB93W5StJjOub22zV6I6l2r9nL3tOjDeveH1MH9mxXyznizLpx9j01vA"
+      }
+    ]
+  },
+  "gallery": {
+    "title": "The TechGuru Experience",
+    "description": "Capturing the moments that define our spirit of innovation and excellence.",
+    "images": [
+      {
+        "tag": "WORKSHOP AREA",
+        "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuDwmSSZuw6a-VQOyJJnMJg5KZ-q4QIu6PGA4JA9Eu0dFHFtuarU_s023TfPr1W4qcxGeYyjrzFDm1eEeSZaLzrOC4C0M0e8QqaP_hBJB4nPj8YOxNyUKkD4iDCxBgzm_ErJwDIvxUNma3bec9pXGsLLfJAnfJRI3hY877MtoSV9T6URljAis5c7Pk3G4_Zo1x5MZ0Z2xyvnfPXeko4QQO8Iwam-s6ZTSr9-T2n8HTr7gV_6Z0vZ90MGuyeNN5_3pqNuV0w2PCV3qLA"
+      },
+      {
+        "tag": "Main Stage",
+        "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuBiBxZ_bZ7h067N9NsyWRyTpOCx0kvwUiBvEbeVlSzzpfkLEIY7LpvVtSaqDA3kWzb2sWNjlyEL2UVfdeDKI0jKf8Jr8rvIi0gN6vtGdUeabLrm1GHit-Kmj1ZL-R7pUAnXbhyHCAeV7hYbnAIKQgAxUP9kpAzBkFALJBk0biQjeKcuao1UAW9gWqH8l9HUEXUeN7RybZFyQQ-A1hSuxlgTB93W5StJjOub22zV6I6l2r9nL3tOjDeveH1MH9mxXyznizLpx9j01vA"
+      },
+      {
+        "tag": "Project Lab",
+        "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuDSlNTFThvVmxpY_79IP5bJ9eW6gIPcB9LCDzf77MzKxnU2wkM6XSpod5osee02F9Ye3OyH4G8kFtVMR8MUyx3MiJVlKbRfrDXwvETZfuaOS0bkPNrjoD2ZEjZsGU4V6GH8qqxi3j1kEnitkYQ2cfD6EOrXQtI3nvl2yByjaIjBlA5UlC21QoSgzfGz4I7aYWRIMM6_CXOBbE0C3Lvv5-JG6YhzGqMvl4ZSn2p7PloqT1p8Fya4wgkqVXVKTTcUttXDKVfo4H1p8yM"
+      },
+      {
+        "tag": "Keynote",
+        "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuAHQSF6bqcBYHmrU_H1efer_yDu5AQJI6DU9o9423kT39ql0tesUHlrOAUGG92eGEHuM4WNvCsVgnfELivw5_D0hFjOp8cADuIX1Rh5dxvgemPWx4rKnlmY3zOHsLr4DWTfll4q_S2OZF9oL34vUD-lowNhAr5nDd15iya7M3SOWeOjmz0J5hqPL7VbYD8eEZ44upI-Pw_t3nk475suAiRO-EFixkFl3UBu8iq9fl-b0simWu-PEKpgnXZMVLST96-DYLaLmVs6kwU"
+      }
+    ]
+  },
+  "footer": {
+    "precisionHeading": "Crafted with Precision",
+    "mission": "Designed & Developed by the GCOERC Coding Club. We are a community of passionate builders shaping the digital frontier of our institution.",
+    "teamImage": "https://lh3.googleusercontent.com/aida-public/AB6AXuDwmSSZuw6a-VQOyJJnMJg5KZ-q4QIu6PGA4JA9Eu0dFHFtuarU_s023TfPr1W4qcxGeYyjrzFDm1eEeSZaLzrOC4C0M0e8QqaP_hBJB4nPj8YOxNyUKkD4iDCxBgzm_ErJwDIvxUNma3bec9pXGsLLfJAnfJRI3hY877MtoSV9T6URljAis5c7Pk3G4_Zo1x5MZ0Z2xyvnfPXeko4QQO8Iwam-s6ZTSr9-T2n8HTr7gV_6Z0vZ90MGuyeNN5_3pqNuV0w2PCV3qLA",
+    "description": "Defining the technological pinnacle. GCOERC's flagship event returns to set new benchmarks in innovation.",
+    "quickLinks": ["The Schedule", "Rulebook 2026", "Registration", "Past Highlights"],
+    "contact": {
+      "address": "GCOERC Campus, Nashik",
+      "email": "contact@techguru.GCOERC.edu.in"
+    }
+  }
+}
