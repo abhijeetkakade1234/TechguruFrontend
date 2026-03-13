@@ -2,12 +2,12 @@
 
 @theme {
   --color-primary: #0db9f2;
-  --color-dark: #1a1a1a;
-  --color-surface: #f8f9fa;
-  --color-card: #ffffff;
-  
+  --color-dark: #0a0a0a;
+  --color-surface: #0f0f0f;
+  --color-card: #141414;
+
   --font-sans: var(--font-inter), "Inter", ui-sans-serif, system-ui, sans-serif;
-  
+
   --radius-custom: 12px;
   --radius-2rem: 2rem;
   --radius-3rem: 3rem;
@@ -19,60 +19,70 @@
 }
 
 :root {
-  --bg: #ffffff;
-  --text: #1a1a1a;
-  --card-bg: #ffffff;
-  --footer-bg: #f8f9fa;
+  --bg: #080808;
+  --text: #e8e8e8;
+  --card-bg: #111111;
+  --footer-bg: #050505;
+  --grid-color: rgba(13, 185, 242, 0.04);
+  --border: rgba(255,255,255,0.07);
 }
 
-.dark {
-  --bg: #0a0a0a;
-  --text: #f8f9fa;
-  --card-bg: #161616;
-  --footer-bg: #000000;
-}
+/* Always dark — no light mode */
 
 body {
   background-color: var(--bg);
   color: var(--text);
-  transition: background-color 0.3s, color 0.3s;
   font-family: var(--font-sans);
   letter-spacing: -0.02em;
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 body::-webkit-scrollbar {
-  display: none; /* Chrome, Safari and Opera */
+  display: none;
 }
 
+/* ── Glass ── */
 .glass-effect {
-  background: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(0, 0, 0, 0.05);
+  background: rgba(14, 14, 14, 0.88);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--border);
 }
 
-.dark .glass-effect {
-  background: rgba(20, 20, 20, 0.8);
-  border-color: rgba(255, 255, 255, 0.1);
+/* Mobile nav overlay — slightly more visible */
+.glass-menu {
+  background: rgba(10, 10, 10, 0.96);
+  backdrop-filter: blur(32px);
+  -webkit-backdrop-filter: blur(32px);
+  border: 1px solid rgba(13, 185, 242, 0.12);
 }
 
+/* ── Gradients ── */
 .text-gradient {
-  background: linear-gradient(to right, #0db9f2, #0077ff);
+  background: linear-gradient(135deg, #0db9f2 0%, #a855f7 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
+.text-gradient-warm {
+  background: linear-gradient(135deg, #f97316 0%, #ec4899 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ── Layout Primitives ── */
 .sticky-container {
   position: relative;
-  height: 400vh; /* Increased height for a more leisurely horizontal scroll */
+  height: 400vh;
 }
 
 .sticky-content {
   position: sticky;
   top: 0;
-  height: 100vh;
+  height: 100dvh;
   width: 100%;
   overflow: hidden;
   display: flex !important;
@@ -98,10 +108,9 @@ body::-webkit-scrollbar {
   flex-shrink: 0;
 }
 
-
 @media (max-width: 768px) {
   .sticky-container {
-    height: 300vh; /* Re-enabled sticky height for mobile */
+    height: 300vh;
   }
   .horizontal-scroll {
     padding: 0 5vw !important;
@@ -113,10 +122,7 @@ body::-webkit-scrollbar {
   }
 }
 
-
-
-
-
+/* ── Typography ── */
 h1, h2, h3 {
   letter-spacing: -0.05em !important;
 }
@@ -127,6 +133,7 @@ h1, h2, h3 {
   line-height: 1;
 }
 
+/* ── Animations ── */
 .animate-marquee {
   display: flex;
   animation: marquee 30s linear infinite;
@@ -152,22 +159,6 @@ h1, h2, h3 {
   50% { opacity: 0.5; transform: scale(1.1); }
 }
 
-/* Specific component overrides from code.html */
-.dark .bg-slate-50, .dark .bg-surface {
-  background-color: var(--card-bg) !important;
-}
-
-.dark .text-gray-600, .dark .text-gray-500 {
-  color: #a1a1aa !important;
-}
-
-.dark .text-dark {
-  color: #ffffff !important;
-}
-
-.dark .border-slate-100, .dark .border-slate-200, .dark .border-gray-200 {
-  border-color: #27272a !important;
-}
 @keyframes lineDrawing {
   0% { stroke-dashoffset: 1000; fill: transparent; }
   80% { stroke-dashoffset: 0; fill: transparent; }
@@ -195,8 +186,17 @@ h1, h2, h3 {
 
 .bg-tech-grid {
   background-size: 40px 40px;
-  background-image: 
-    linear-gradient(to right, rgba(255,255,255,0.02) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255,255,255,0.02) 1px, transparent 1px);
+  background-image:
+    linear-gradient(to right, var(--grid-color) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-color) 1px, transparent 1px);
   animation: techGrid 20s linear infinite;
+}
+
+/* ── Glow utilities ── */
+.glow-primary {
+  box-shadow: 0 0 40px rgba(13, 185, 242, 0.15);
+}
+
+.glow-accent {
+  box-shadow: 0 0 40px rgba(168, 85, 247, 0.15);
 }

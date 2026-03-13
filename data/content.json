@@ -98,5 +98,12 @@
       "address": "GCOERC Campus, Nashik",
       "email": "contact@techguru.GCOERC.edu.in"
     }
-  }
+  },
+  "navLinks": [
+    { "name": "ABOUT US", "href": "#" },
+    { "name": "EVENTS", "href": "#" },
+    { "name": "SCHEDULE", "href": "#" },
+    { "name": "PROCESS", "href": "#" },
+    { "name": "CONTACT", "href": "#" }
+  ]
 }

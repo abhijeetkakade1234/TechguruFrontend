@@ -8,8 +8,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "TechGuru 2026 | GGSCE, Nashik",
-  description: "Designing the Future Today. Join the ultimate tech revolution at GGSCE Nashik.",
+  title: "TechGuru 2026 | GCOERC, Nashik",
+  description: "Designing the Future Today. Join the ultimate tech revolution at GCOERC Nashik.",
 };
 
 export default function RootLayout({
@@ -18,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="dark">
       <head>
         {/* eslint-disable-next-line @next/next/no-page-custom-font */}
         <link

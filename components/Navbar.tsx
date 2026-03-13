@@ -1,16 +1,13 @@
-export default function Navbar() {
-  const navLinks = [
-    { name: "ABOUT US", href: "#" },
-    { name: "EVENTS", href: "#" },
-    { name: "SCHEDULE", href: "#" },
-    { name: "PROCESS", href: "#" },
-    { name: "CONTACT", href: "#" },
-  ];
+interface NavLink {
+  name: string;
+  href: string;
+}
 
+export default function Navbar({ links }: { links: NavLink[] }) {
   return (
-    <nav className="hidden md:flex items-center gap-8 text-[11px] font-bold text-slate-500 dark:text-zinc-400 tracking-widest uppercase">
-      {navLinks.map((link) => (
-        <a key={link.name} className="hover:text-primary dark:hover:text-primary transition-colors py-2" href={link.href}>
+    <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-zinc-400">
+      {links.map((link) => (
+        <a key={link.name} className="hover:text-primary transition-colors" href={link.href}>
           {link.name}
         </a>
       ))}

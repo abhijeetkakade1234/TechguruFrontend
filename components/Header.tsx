@@ -1,71 +1,78 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Navbar from "./Navbar";
+import content from "@/data/content.json";
 
 export default function Header() {
-  const [isDark, setIsDark] = useState(false);
-
-  useEffect(() => {
-    if (document.documentElement.classList.contains("dark")) {
-      // eslint-disable-next-line react-hooks/set-state-in-effect
-      setIsDark(true);
-    }
-  }, []);
-
-  const toggleTheme = () => {
-    const isDarkMode = document.documentElement.classList.toggle("dark");
-    setIsDark(isDarkMode);
-  };
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 px-6 py-4 flex justify-between items-center bg-white/70 dark:bg-black/80 backdrop-blur-xl border border-black/[0.03] dark:border-white/10 mx-auto mt-4 max-w-7xl rounded-full reveal active transition-all duration-300 shadow-[0_8px_32px_rgba(0,0,0,0.04)] dark:shadow-none">
-      <div className="flex items-center gap-2">
-        <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center shadow-lg shadow-primary/20">
-          <span className="text-white font-black text-[10px]">TG</span>
+    <>
+      {/* Header pill — inset-x-4 gives side breathing room on mobile */}
+      <header className="fixed top-4 inset-x-4 md:left-1/2 md:-translate-x-1/2 md:w-full md:max-w-7xl z-[100] px-4 md:px-6 py-3 flex justify-between items-center glass-effect rounded-full reveal active">
+        {/* Logo */}
+        <div className="flex items-center gap-2 shrink-0">
+          <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
+            <span className="text-white font-bold text-xs">TG</span>
+          </div>
+          <span className="font-bold text-lg md:text-xl tracking-tighter text-white">
+            TechGuru <span className="text-primary">2026</span>
+          </span>
         </div>
-        <span className="font-bold text-xl tracking-tighter text-slate-800 dark:text-white">
-          TechGuru <span className="text-primary font-black">2026</span>
-        </span>
-      </div>
-      
-      <Navbar />
 
-      <div className="flex items-center gap-2">
+        {/* Desktop Nav — centered */}
+        <Navbar links={content.navLinks} />
+
+        {/* Hamburger — mobile only */}
         <button
-          onClick={toggleTheme}
-          className="p-2 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 transition-all shadow-md flex items-center justify-center group border border-slate-200 dark:border-slate-700"
-          id="theme-toggle"
-          aria-label="Toggle Theme"
+          className="md:hidden cursor-pointer p-1 text-white shrink-0"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          aria-label="Toggle menu"
         >
-          {!isDark ? (
-            <span className="material-symbols-outlined block text-slate-900 !text-[18px] group-hover:rotate-12 transition-transform" style={{ fontVariationSettings: "'FILL' 1" }}>
-              dark_mode
-            </span>
+          {isMenuOpen ? (
+            <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
           ) : (
-            <span className="material-symbols-outlined block text-yellow-400 !text-[18px] group-hover:-rotate-12 transition-transform" style={{ fontVariationSettings: "'FILL' 1" }}>
-              light_mode
-            </span>
+            <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
           )}
         </button>
+      </header>
 
-        <div className="md:hidden p-2 cursor-pointer text-dark dark:text-white">
-          <svg
-            className="h-6 w-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M4 6h16M4 12h16m-7 6h7"
-            ></path>
-          </svg>
+      {/* Mobile Menu — auto height, scrollable if needed */}
+      <div
+        className={`fixed inset-x-4 top-[72px] z-[99] glass-menu md:hidden rounded-3xl transition-all duration-300 overflow-y-auto ${
+          isMenuOpen
+            ? "opacity-100 translate-y-0 pointer-events-auto max-h-[80vh]"
+            : "opacity-0 -translate-y-4 pointer-events-none max-h-0"
+        }`}
+      >
+        <div className="flex flex-col items-center gap-0 py-6 px-6 w-full">
+          {content.navLinks.map((link, i) => (
+            <a
+              key={link.name}
+              href={link.href}
+              className={`text-xl font-black tracking-tighter text-white hover:text-primary transition-colors text-center w-full py-4 ${
+                i < content.navLinks.length - 1 ? "border-b border-white/5" : ""
+              }`}
+              onClick={() => setIsMenuOpen(false)}
+            >
+              {link.name}
+            </a>
+          ))}
         </div>
       </div>
-    </header>
+
+      {/* Backdrop */}
+      {isMenuOpen && (
+        <div
+          className="fixed inset-0 z-[98] md:hidden"
+          onClick={() => setIsMenuOpen(false)}
+        />
+      )}
+    </>
   );
 }

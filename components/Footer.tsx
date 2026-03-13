@@ -4,16 +4,16 @@ export default function Footer() {
   return (
     <>
       <section className="mb-24 reveal max-w-7xl mx-auto px-6">
-        <div className="bg-dark dark:bg-[#161616] text-white rounded-[3rem] p-12 md:p-20 overflow-hidden relative">
+        <div className="bg-[#111] text-white rounded-[3rem] p-12 md:p-20 overflow-hidden relative border border-white/5">
           <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-4xl md:text-5xl font-black mb-6">
+              <h2 className="text-4xl md:text-5xl font-black mb-6 text-white">
                 Crafted with <span className="text-primary">Precision</span>
               </h2>
-              <p className="text-gray-400 text-lg mb-8">
+              <p className="text-zinc-400 text-lg mb-8 leading-relaxed">
                 {content.footer.mission}
               </p>
-              <button className="px-8 py-3 bg-primary text-black font-bold rounded-full hover:bg-white transition-colors cursor-pointer">
+              <button className="px-8 py-3 bg-white text-black font-bold rounded-full hover:bg-zinc-200 transition-colors cursor-pointer">
                 Meet the Team
               </button>
             </div>
@@ -24,15 +24,15 @@ export default function Footer() {
                 className="w-full h-full object-cover"
                 src={content.footer.teamImage}
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
             </div>
           </div>
-          <div className="absolute top-0 right-0 w-64 h-64 bg-primary/20 rounded-full blur-[100px] -mr-32 -mt-32"></div>
+          <div className="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-[100px] -mr-32 -mt-32"></div>
         </div>
       </section>
 
       <footer
-        className="bg-black text-white pt-24 pb-12 px-6 sm:px-10 lg:px-20 border-t border-white/5"
+        className="bg-[#050505] text-white pt-24 pb-12 px-6 sm:px-10 lg:px-20 border-t border-white/5"
         data-purpose="main-footer"
       >
         <div className="max-w-7xl mx-auto">
@@ -40,18 +40,18 @@ export default function Footer() {
             <div className="col-span-1 md:col-span-1">
               <div className="flex items-center gap-2 mb-8">
                 <div className="w-10 h-10 bg-primary rounded-xl flex items-center justify-center rotate-3">
-                  <span className="text-black font-black text-lg">TG</span>
+                  <span className="text-white font-black text-lg">TG</span>
                 </div>
                 <span className="font-black text-2xl tracking-tighter italic uppercase">
                   TechGuru <span className="text-primary">2026</span>
                 </span>
               </div>
-              <p className="text-gray-400 text-sm leading-relaxed max-w-xs mb-8">
+              <p className="text-zinc-500 text-sm leading-relaxed max-w-xs mb-8">
                 {content.footer.description}
               </p>
               <div className="flex gap-4">
                 <a
-                  className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-primary transition-all"
+                  className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-white/10 transition-all text-zinc-400 hover:text-white"
                   href="#"
                 >
                   <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
@@ -59,7 +59,7 @@ export default function Footer() {
                   </svg>
                 </a>
                 <a
-                  className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-primary transition-all"
+                  className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-white/10 transition-all text-zinc-400 hover:text-white"
                   href="#"
                 >
                   <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
@@ -72,10 +72,10 @@ export default function Footer() {
               <h4 className="text-white font-bold mb-8 uppercase tracking-widest text-xs">
                 Quick Links
               </h4>
-              <ul className="space-y-4 text-sm text-gray-400">
+              <ul className="space-y-4 text-sm text-zinc-500">
                 {content.footer.quickLinks.map((link) => (
                   <li key={link}>
-                    <a className="hover:text-primary transition-colors" href="#">
+                    <a className="hover:text-white transition-colors" href="#">
                       {link}
                     </a>
                   </li>
@@ -86,38 +86,32 @@ export default function Footer() {
               <h4 className="text-white font-bold mb-8 uppercase tracking-widest text-xs">
                 Contact
               </h4>
-              <ul className="space-y-4 text-sm text-gray-400 font-mono">
+              <ul className="space-y-4 text-sm text-zinc-500 font-mono">
                 <li className="flex items-start gap-3">
-                  <span className="material-symbols-outlined text-primary text-sm">
-                    location_on
-                  </span>
+                  <span className="material-symbols-outlined text-zinc-400 text-sm">location_on</span>
                   <span>{content.footer.contact.address}</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <span className="material-symbols-outlined text-primary text-sm">mail</span>
+                  <span className="material-symbols-outlined text-zinc-400 text-sm">mail</span>
                   <span>{content.footer.contact.email}</span>
                 </li>
               </ul>
             </div>
             <div>
-              <button className="w-full py-3 bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl transition-all flex items-center justify-center gap-2 mb-4 cursor-pointer">
+              <button className="w-full py-3 bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl transition-all flex items-center justify-center gap-2 mb-4 cursor-pointer text-white">
                 <span className="material-symbols-outlined">download</span>
                 <span className="font-bold text-sm">Event Brochure</span>
               </button>
             </div>
           </div>
-          <div className="border-t border-white/5 pt-12 flex flex-col md:flex-row justify-between items-center gap-6 text-[10px] md:text-xs text-center md:text-left text-gray-500">
+          <div className="border-t border-white/5 pt-12 flex flex-col md:flex-row justify-between items-center gap-6 text-[10px] md:text-xs text-center md:text-left text-zinc-600">
             <p>© 2026 TechGuru. GCOERC Nashik.</p>
             <p className="font-medium tracking-wide uppercase">
-              Created with ❤️ by the <span className="text-white">GCOERC Coding Club</span>
+              Created with ❤️ by the <span className="text-zinc-400">GCOERC Coding Club</span>
             </p>
             <div className="flex gap-6">
-              <a className="hover:text-white" href="#">
-                Privacy Policy
-              </a>
-              <a className="hover:text-white" href="#">
-                Terms of Use
-              </a>
+              <a className="hover:text-white transition-colors" href="#">Privacy Policy</a>
+              <a className="hover:text-white transition-colors" href="#">Terms of Use</a>
             </div>
           </div>
         </div>
